@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFriendActivity">
+
+    <TextView
+        android:id="@+id/textViewAddFriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dodaj znajomego"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <EditText
+        android:id="@+id/editTextFriendName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nazwa Znajomego"
+        android:layout_below="@id/textViewAddFriend"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="Numer Telefonu"
+        android:layout_below="@id/editTextFriendName"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/buttonSaveFriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dodaj"
+        android:layout_below="@id/editTextPhoneNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonPickContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSaveFriend"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Wybierz znajomego z kontaktów" />
+</RelativeLayout>
+

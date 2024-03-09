@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddAmountOwedActivity">
+
+    <TextView
+        android:id="@+id/textViewAddFriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wyznacz należność"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerFriends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Wybierz znajomych"
+        android:inputType="text"
+        android:layout_below="@id/textViewAddFriend"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Tytuł"
+        android:layout_below="@id/spinnerFriends"
+        android:layout_margin="16dp" />
+
+    <EditText
+        android:id="@+id/editTextAmountOwed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned|numberDecimal"
+        android:hint="Dłużna wartość"
+        android:layout_below="@id/editTextTitle"
+        android:layout_margin="16dp"/>
+
+
+    <Button
+        android:id="@+id/buttonSaveAmountOwed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zapisz"
+        android:layout_below="@id/editTextAmountOwed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>
